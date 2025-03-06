@@ -6,3 +6,6 @@ window.addEventListener('scroll', function() {
         header.classList.remove('sticky');
     }
 });
+
+const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+document.documentElement.style.setProperty('--scrollbar-width', `${scrollBarWidth}px`);
